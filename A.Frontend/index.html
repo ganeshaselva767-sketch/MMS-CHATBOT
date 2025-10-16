@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mira Model School — Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Evy3qQL_nSK4AoPHyO8rDw2JniABDbJfgg&s" alt="MMS logo">
+    <h1>Mira Model School — Chatbot</h1>
+  </header>
+
+  <main class="main">
+    <aside id="quick-buttons">
+      <button class="quick-btn" onclick="askTopic('about school')">🏫 About School</button>
+      <button class="quick-btn" onclick="askTopic('streams')">🎓 Streams</button>
+      <button class="quick-btn" onclick="askTopic('extra curricular')">🎨 Extra Curricular</button>
+      <button class="quick-btn" onclick="askTopic('facilities')">🏢 Facilities</button>
+      <button class="quick-btn" onclick="askTopic('achievements')">🏅 Achievements</button>
+      <button class="quick-btn" onclick="askTopic('admission')">📝 Admission</button>
+      <button class="quick-btn" onclick="askTopic('contact')">📞 Contact</button>
+      <button class="quick-btn" onclick="openWebsite()">🌐 Website</button>
+      <button class="quick-btn" onclick="openRegistration()">📝 Registration</button>
+    </aside>
+
+    <section id="chat-wrap">
+      <div id="chat-container">
+        <div id="chat-header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Evy3qQL_nSK4AoPHyO8rDw2JniABDbJfgg&s" alt="logo">
+          <div class="title">Miraite — School Assistant</div>
+        </div>
+
+        <div id="messages"></div>
+        <div id="typing-indicator" class="typing" style="display:none;">Miraite is typing...</div>
+
+        <div id="input-area">
+          <input id="user-input" placeholder="Type your question..." />
+          <button id="send-btn" onclick="sendMessage()" title="Send"><i class="fa-solid fa-paper-plane"></i></button>
+          <button id="mic-btn" onclick="startMic()" title="Speak"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <aside id="right-panel">
+      <div id="slideshow">
+        <img src="https://d3bat55ebwjhsf.cloudfront.net/schools/cover/user_miramodelschool/IMG_20180419_115120.jpg" class="active" alt="Gate">
+        <img src="https://images.uniapply.com/uploads/college/image/500/2190/5_211129_180815.jpeg" alt="Building">
+        <img src="https://media.licdn.com/dms/image/v2/D4E10AQECkbMEG8XrGw/image-shrink_800/B4EZbOAuFSHMAg-/0/1747213018026?e=2147483647&v=beta&t=NqvdlCd0CBL5lv1lKexk__tQ-qyzJzMLysUUJg_PFCs" alt="Campus">
+        <img src="https://static.wixstatic.com/media/5ba753_01a0b4d5db6a4f9d885cff3b577c0f68f000.jpg/v1/fill/w_1425,h_765,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/5ba753_01a0b4d5db6a4f9d885cff3b577c0f68f000.jpg" alt="Event">
+      </div>
+    </aside>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
